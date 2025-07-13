@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #27292a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.header-area {
+  background-color: #1f2122;
+  padding: 0px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-area .main-nav {
+  min-height: 80px;
+  background: transparent;
+}
+
+.header-area .main-nav .nav {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.header-area .main-nav .nav li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-area .main-nav .nav li a {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.header-area .main-nav .nav li a.active,
+.header-area .main-nav .nav li a:hover {
+  color: #e75e8d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-content {
+  margin-top: 80px;
+}
+
+.main-banner {
+  padding: 100px 0px 100px 0px;
+  background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3');
+  background-size: cover;
+  background-position: center;
+  border-radius: 23px;
+  margin-bottom: 80px;
+}
+
+.main-banner .header-text h6 {
+  font-size: 15px;
+  color: #e75e8d;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.main-banner .header-text h4 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.welcome-box {
+  background: linear-gradient(45deg, #1f2122, #27292a);
+  border: 2px solid #e75e8d;
+  border-radius: 23px;
+  padding: 30px;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.champion-finder-btn {
+  background: linear-gradient(145deg, #e75e8d, #d946ef);
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(231, 94, 141, 0.3);
+}
+
+.champion-finder-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(231, 94, 141, 0.4);
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 30px;
+  background: linear-gradient(145deg, #1f2122, #27292a);
+  border-radius: 23px;
+  border-left: 4px solid #e75e8d;
+  display: none;
+  color: #fff;
+}
+
+.gaming-library {
+  margin-bottom: 80px;
+}
+
+.gaming-library .heading-section h4 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.gaming-library .item {
+  background-color: #1f2122;
+  border-radius: 23px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.gaming-library .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.champion-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 23px;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.champion-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2) contrast(1.1);
+  box-shadow: 0 8px 25px rgba(231, 94, 141, 0.4);
+}
+
+.gaming-library .item h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.gaming-library .item:hover h4 {
+  color: #e75e8d;
+}
+
+.gaming-library .item span {
+  font-size: 14px;
+  color: #e75e8d;
+  font-weight: 500;
+}
+
+.gaming-library .item p {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.filter-btn {
+  background-color: #1f2122;
+  color: #fff;
+  border: 2px solid #e75e8d;
+  padding: 10px 20px;
+  margin: 0 10px 10px 0;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background-color: #e75e8d;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.champions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  background-color: #1f2122;
+  border-radius: 23px;
+  overflow: hidden;
+}
+
+.champions-table th {
+  background-color: #e75e8d;
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.champions-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #27292a;
+  color: #fff;
+}
+
+.champions-table tr:hover {
+  background-color: #27292a;
+}
+
+.about-list {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.template-attribution {
+  background-color: #1f2122;
+  padding: 30px;
+  border-radius: 23px;
+  margin: 50px 0;
+  text-align: center;
+  border: 2px solid #e75e8d;
+}
+
+.template-link {
+  color: #e75e8d;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.template-link:hover {
+  color: #d946ef;
+}
+
+footer {
+  background-color: #1f2122;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 80px;
+  border-top: 2px solid #e75e8d;
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .header-area .main-nav .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  .main-banner .header-text h4 {
+    font-size: 36px;
+  }
+  
+  .gaming-library .item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner {
+    padding: 60px 0;
+  }
+  
+  .main-banner .header-text h4 {
+    font-size: 28px;
+  }
+  
+  .filter-btn {
+    margin: 5px;
+    padding: 8px 16px;
+  }
+  
+  .champions-table {
+    font-size: 14px;
+  }
+  
+  .champions-table th,
+  .champions-table td {
+    padding: 10px;
+  }
+}
